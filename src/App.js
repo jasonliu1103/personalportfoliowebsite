@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Navbar from "./components/Navbar.jsx";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
   return (
-    <>
-      <h1>Welcome! This is Jason.</h1>
-      <p3>This is my website. You will find everything you need to know about me here. Enjoy.</p3> 
-    </>
+    <div className={`container ${theme}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
+    </div>
   );
 }
 
