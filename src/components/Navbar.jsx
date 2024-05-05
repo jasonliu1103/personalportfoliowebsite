@@ -7,13 +7,13 @@ import light_toggle from "../assets/night.png";
 
 const Navbar = ({ theme, setTheme }) => {
   const toggle_mode = () => {
-    theme == "light" ? setTheme("dark") : setTheme("light");
+    theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
   return (
     <div className="navbar">
       <img
-        src={theme == "light" ? logo_light : logo_dark}
+        src={theme === "light" ? logo_light : logo_dark}
         alt=""
         className="logo"
       />
@@ -28,7 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
         onClick={() => {
           toggle_mode();
         }}
-        src={theme == "light" ? light_toggle : dark_toggle}
+        src={theme === "light" ? light_toggle : dark_toggle}
         alt=""
         className="icon-toggle"
       />
