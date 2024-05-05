@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar.jsx";
+import About from "./components/Home.jsx";
 
 function App() {
   const current_theme = localStorage.getItem("current_state");
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className={`container ${theme}`}>
       <Navbar theme={theme} setTheme={setTheme} />
+      <About theme={theme} setTheme={setTheme} />
     </div>
   );
 }

@@ -21,13 +21,14 @@ ul {
 
 ul li {
   display: inline-block;
-  margin: 10px 20px;
-  font-size: 18px;
+  margin: 10px 25px;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
 }
 
 .icon-toggle {
-  width: 40px;
+  width: 30px;
   cursor: pointer;
   margin-left: 40px;
 }
@@ -35,4 +36,9 @@ ul li {
 .dark .navbar {
   background: #000;
   color: #fff;
+}
+
+ul li:hover {
+  color: rgb(45, 165, 165);
+  border-bottom: 3px solid;
 }
