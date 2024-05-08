@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 import logo_light from "../assets/logo-black.png";
 import logo_dark from "../assets/logo-white.png";
@@ -18,11 +19,31 @@ const Navbar = ({ theme, setTheme }) => {
         className="logo"
       />
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Experiences</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="experiences" smooth={true} duration={500}>
+            Experiences
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       <img
         onClick={() => {

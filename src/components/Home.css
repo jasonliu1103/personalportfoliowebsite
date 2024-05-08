@@ -1,0 +1,55 @@
+.Home {
+  display: inline-block;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-left: 120px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.smaller-heading {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.typeanimation {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+a.resume-btn,
+a.github-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.resume-btn:hover,
+a.github-btn:hover {
+  background-color: #0056b3;
+}
+
+.dark a.resume-btn,
+.dark a.github-btn {
+  background-color: #0e253d;
+}
+
+.dark a.resume-btn:hover,
+.dark a.github-btn:hover {
+  background-color: #123d6b;
+}
+
+.github-btn svg {
+  font-size: 1rem;
+}
