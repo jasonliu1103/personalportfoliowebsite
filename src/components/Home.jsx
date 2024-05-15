@@ -9,7 +9,7 @@ const Home = ({ theme }) => {
     <section id="home">
       <div className="Home">
         <h1
-          className="title"
+          className="home-title"
           style={{
             color: theme === "light" ? "#000" : "#fff",
           }}

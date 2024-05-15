@@ -45,7 +45,7 @@ const Navbar = ({ theme, setTheme }) => {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500} offset={-180}>
             About
           </Link>
         </li>

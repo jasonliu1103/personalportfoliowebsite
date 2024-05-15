@@ -6,7 +6,7 @@ const About = ({ theme }) => {
     <section id="about">
       <div className="About">
         <h1
-          className="title"
+          className="about-title"
           style={{ color: theme === "light" ? "#000" : "#fff" }}
         >
           About Me
@@ -23,8 +23,8 @@ const About = ({ theme }) => {
             Waterloo.
           </b>{" "}
           I have a keen sense of detail, I enjoy problem-solving and I am a fast
-          learner. I have much experience dealing with IT-related issues from
-          my previous co-op terms.
+          learner. I have much experience dealing with IT-related issues from my
+          previous co-op terms.
         </p>
         <p
           className="smaller-heading2"
@@ -52,8 +52,8 @@ const About = ({ theme }) => {
             color: theme === "light" ? "#000" : "#fff",
           }}
         >
-          If I am not studying or coding, I typically enjoy listening to
-          music, playing basketball, playing video games(find me on Valorant or
+          If I am not studying or coding, I typically enjoy listening to music,
+          playing basketball, playing video games(find me on Valorant or
           Fortnite!) or driving around.
         </p>
         <p

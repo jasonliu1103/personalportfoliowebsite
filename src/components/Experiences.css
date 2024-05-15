@@ -1,0 +1,39 @@
+.Experiences {
+  display: inline-block;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 190px;
+  padding-left: 130px;
+}
+
+.Experiences .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 47px;
+}
+
+.Experiences ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+}
+
+.Experiences li {
+  margin-bottom: 20px;
+}
+
+.Experiences h3 {
+  margin-bottom: 5px;
+}
+
+.Experiences p {
+  margin: 0;
+}
+
+.experiences-list .experience-item:hover {
+  color: inherit;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
