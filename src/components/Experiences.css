@@ -17,7 +17,7 @@
   list-style-type: none;
   padding: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .Experiences li {
@@ -36,4 +36,34 @@
   color: inherit;
   border-bottom: 3px solid transparent;
   cursor: pointer;
+}
+
+a.resume-btn-experiences {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.resume-btn-experiences:hover {
+  background-color: #0056b3;
+}
+
+.dark a.resume-btn-experiences {
+  background-color: #0e253d;
+}
+
+.dark a.resume-btn-experiences:hover {
+  background-color: #123d6b;
+}
+
+.experience-image {
+  width: 100px; 
+  height: 100px; 
+  margin-right: 20px;  
+  border-radius: 1px; 
+  object-fit: contain;
 }
