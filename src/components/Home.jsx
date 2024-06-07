@@ -4,23 +4,15 @@ import resume from "../assets/JasonLiuResume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import "./Home.css";
 
-const Home = ({ theme }) => {
+const Home = () => {
   return (
     <section id="home">
       <div className="Home">
-        <h1
-          className="home-title"
-          style={{
-            color: theme === "light" ? "#000" : "#fff",
-          }}
-        >
+        <h1 className="home-title">
           Welcome! My name is Jason.
         </h1>
         <TypeAnimation
           className="typeanimation"
-          style={{
-            color: theme === "light" ? "#000" : "#fff",
-          }}
           sequence={[
             "I'm an aspiring engineer",
             1500,
@@ -33,15 +25,9 @@ const Home = ({ theme }) => {
           speed={200}
           deletionSpeed={200}
           repeat={Infinity}
-          cursor={true}
-          key={theme}
+          cursor={false}
         />
-        <p
-          className="smaller-heading"
-          style={{
-            color: theme === "light" ? "#000" : "#fff",
-          }}
-        >
+        <p className="smaller-heading">
           You will find everything you need to know about me here. Enjoy.
         </p>
         <a

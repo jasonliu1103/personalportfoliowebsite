@@ -32,13 +32,12 @@ const experiencesData = [
   },
 ];
 
-const Experiences = ({ theme }) => {
-  const titleColor = theme === "light" ? "#000" : "#fff";
+const Experiences = () => {
 
   return (
     <section id="experiences">
-      <div className="Experiences" style={{ color: titleColor }}>
-        <h1 className="title">Experiences</h1>
+      <div className="Experiences">
+        <h1 className="title">Experience</h1>
         <ul className="experiences-list">
           {experiencesData.map((experience) => (
             <li key={experience.id} className="experience-item">

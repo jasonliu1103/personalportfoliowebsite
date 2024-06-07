@@ -38,6 +38,14 @@
   cursor: pointer;
 }
 
+.dark {
+  color: white;
+}
+
+.light {
+  color: black;
+}
+
 a.resume-btn-experiences {
   display: inline-block;
   padding: 10px 20px;

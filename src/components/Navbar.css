@@ -21,6 +21,14 @@
   cursor: pointer;
 }
 
+.dark .logo {
+  content:url(../assets/logo-white.png);
+}
+
+.light .logo {
+  content:url(../assets/logo-black.png);
+}
+
 ul {
   flex: 1;
   list-style: none;
@@ -39,6 +47,14 @@ ul li {
   width: 30px;
   cursor: pointer;
   margin-left: 40px;
+}
+
+.dark .icon-toggle {
+  content: url('../assets/day.png');
+}
+
+.light .icon-toggle {
+  content: url('../assets/night.png');
 }
 
 .dark .Navbar {

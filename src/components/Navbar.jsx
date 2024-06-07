@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import logo_light from "../assets/logo-black.png";
-import logo_dark from "../assets/logo-white.png";
-import dark_toggle from "../assets/day.png";
 import light_toggle from "../assets/night.png";
 
 const Navbar = ({ theme, setTheme }) => {
@@ -33,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
     <div className={`Navbar ${isScrolled ? "blurred" : ""}`}>
       <Link to="home" smooth={true} duration={500}>
         <img
-          src={theme === "light" ? logo_light : logo_dark}
+          src={`${logo_light}`}
           alt=""
           className="logo"
         />
@@ -51,7 +49,7 @@ const Navbar = ({ theme, setTheme }) => {
         </li>
         <li>
           <Link to="experiences" smooth={true} duration={500}>
-            Experiences
+            Experience
           </Link>
         </li>
         <li>
@@ -69,7 +67,7 @@ const Navbar = ({ theme, setTheme }) => {
         onClick={() => {
           toggle_mode();
         }}
-        src={theme === "light" ? light_toggle : dark_toggle}
+        src={`${light_toggle}`}
         alt=""
         className="icon-toggle"
       />

@@ -12,6 +12,14 @@
   margin-bottom: 20px;
 }
 
+.dark {
+  color: #fff
+}
+
+.light {
+  color: #000
+}
+
 .smaller-heading {
   font-size: 1.2rem;
   margin-top: 25px;
@@ -22,6 +30,24 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.typeanimation::after {
+  content: '|';
+  animation: blink 1.0s infinite step-start;
+  font-size: 36px; 
+  margin-left: 2px;
+  line-height: 2rem;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 a.resume-btn,
