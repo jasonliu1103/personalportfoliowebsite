@@ -5,15 +5,13 @@ const About = () => {
   return (
     <section id="about">
       <div className="About">
-        <h1 className="about-title">
-          About Me
-        </h1>
+        <h1 className="about-title">About Me</h1>
         <p className="smaller-heading1">
-          My name is Jason, I am a
+          My name is Jason, I am a{" "}
           <b>
             second-year computer engineering student at the University of
             Waterloo.
-          </b>
+          </b>{" "}
           I have a keen sense of detail, I enjoy problem-solving and I am a fast
           learner. I have much experience dealing with IT-related issues from my
           previous co-op terms.

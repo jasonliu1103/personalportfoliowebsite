@@ -46,10 +46,12 @@ const Experiences = () => {
                 alt={experience.title}
                 className="experience-image"
               />
-              <h3>{experience.title}</h3>
-              <p>{experience.company}</p>
-              <p>{experience.duration}</p>
-              <p>{experience.description}</p>
+              <div className="experience-details">
+              <h3 className="experience-title">{experience.title}</h3>
+              <p className="experience-company">{experience.company}</p>
+              <p className="experience-duration">{experience.duration}</p>
+              <p className="experience-description">{experience.description}</p>
+              </div>
             </li>
           ))}
         </ul>
