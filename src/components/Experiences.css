@@ -31,6 +31,9 @@
 .experience-duration {
   font-size: 1em;
   margin: 5px 0;
+  position: absolute;
+  top: 10px;  /* Adjust as necessary */
+  right: 10px;  /* Adjust as necessary */
 }
 
 .experience-description {
@@ -54,9 +57,9 @@
   transition: transform 0.3s, box-shadow 0.3s;
   padding: 20px;
   border-radius: 30px;
-  width: 80%;
-  margin-left: auto;
+  width: 150%;
   display: flex;
+  position: relative;
 }
 
 .dark {
