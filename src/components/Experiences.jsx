@@ -11,28 +11,43 @@ const experiencesData = [
     title: "Software Quality Assurance Engineering Intern",
     company: "AlertDriving",
     duration: "May 2024 - Present",
-    description: "Tools: Jira, PostgreSQL",
+    tools: "Tools: Jira, PostgreSQL",
+    p1: "",
     image: alertdriving_logo,
+    link: "https://www.alertdriving.com/",
   },
   {
     id: 2,
     title: "IT QA Assistant",
     company: "Ontario Ministry of Education",
     duration: "Sept 2023 - Dec 2023",
-    description: "Tools: HTML, CSS, JavaScript, Bootstrap",
+    tools: "Tools: HTML, CSS, JavaScript, Bootstrap",
+    p1: "• Developed and implemented features and content of the EFIS 2.0 board user guide into a web page using <strong>HTML</strong> and <strong>CSS.</strong>", 
+    p2: "• Optimized web page loading using <strong>HTML</strong> and <strong>JavaScript</strong> resulting in a <strong>95%</strong> reduction in load times.",
+    p3: "• Processed over <strong>100+</strong> user access requests and role updates in EFIS 2.0 software.",
+    p4: "• Resolved <strong>250+ IT-related issues</strong> regarding the EFIS 2.0 software, resulting in a more streamlined experience for municipal, First Nations, and school board users.",
     image: ontario_logo,
+    link: "https://efis.fma.csc.gov.on.ca/faab/",
   },
   {
     id: 3,
     title: "Data Processor",
     company: "CHAT Insurance",
     duration: "Jan 2023 - Apr 2023",
-    description: "Tools: Excel",
+    tools: "Tools: Excel",
+    p1: "• Organized <strong>10+ loss run reports in excel</strong>, assigning producer codes to existing insurance policies.",
+    p2: "• Processed and used critical thinking to match insurance premiums for <strong>60+ policy changes, renewals, applications and cancellations</strong> to upload to insurance companies.",
+    p3: "• Provided <strong>administrative support</strong> to brokers to resolve client issues such as declined/missing credit card information or missing files.",
+    p4: "• <strong>Troubleshooted and configured company VPN connection</strong>; fixed error ”Cannot allocate TUN/TAP dev dynamically, allowing for remote access to Power Broker software for employees.",
     image: chat_logo,
+    link: "https://chatin.ca/", 
   },
 ];
 
 const Experiences = () => {
+  const handleExperienceClick = (link) => {
+    window.location.href = link;
+  };
 
   return (
     <section id="experiences">
@@ -40,19 +55,29 @@ const Experiences = () => {
         <h1 className="title">Experience</h1>
         <ul className="experiences-list">
           {experiencesData.map((experience) => (
-            <li key={experience.id} className="experience-item">
-              <img
-                src={experience.image}
-                alt={experience.title}
-                className="experience-image"
-              />
-              <div className="experience-details">
-              <h3 className="experience-title">{experience.title}</h3>
-              <p className="experience-company">{experience.company}</p>
-              <p className="experience-duration">{experience.duration}</p>
-              <p className="experience-description">{experience.description}</p>
-              </div>
-            </li>
+            <div
+              key={experience.id}
+              className="experience-link"
+              onClick={() => handleExperienceClick(experience.link)}
+            >
+              <li className="experience-item">
+                <img
+                  src={experience.image}
+                  alt={experience.title}
+                  className="experience-image"
+                />
+                <div className="experience-details">
+                  <h3 className="experience-title">{experience.title}</h3>
+                  <p className="experience-company">{experience.company}</p>
+                  <p className="experience-duration">{experience.duration}</p>
+                  <p className="experience-tools">{experience.tools}</p>
+                  <p className="p1" dangerouslySetInnerHTML={{ __html: experience.p1 }}></p>
+                  <p className="p2" dangerouslySetInnerHTML={{ __html: experience.p2 }}></p>
+                  <p className="p3" dangerouslySetInnerHTML={{ __html: experience.p3 }}></p>
+                  <p className="p4" dangerouslySetInnerHTML={{ __html: experience.p4 }}></p>
+                </div>
+              </li>
+            </div>
           ))}
         </ul>
         <a
