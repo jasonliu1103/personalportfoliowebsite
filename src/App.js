@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Experiences from "./components/Experiences.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
   const current_theme = localStorage.getItem("current_state");
@@ -18,6 +19,7 @@ function App() {
       <Home theme={theme} setTheme={setTheme} />
       <About theme={theme} setTheme={setTheme} />
       <Experiences theme={theme} setTheme={setTheme} />
+      <Projects theme={theme} setTheme={setTheme} />
     </div>
   );
 }

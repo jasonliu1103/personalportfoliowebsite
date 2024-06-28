@@ -1,0 +1,106 @@
+.projects {
+    display: inline-block;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-left: 130px;
+  }
+
+  .dark {
+    color: white;
+  }
+  
+  .light {
+    color: black;
+  }
+ 
+ .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+  
+  .project-card {
+    background-color: rgb(97, 162, 215);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .dark .project-card {
+    background-color: rgb(10, 31, 49);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .dark .project-card:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .project-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .project-tools {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+  
+  .project-link,
+  .project-github {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .project-link:hover,
+  .project-github:hover {
+    background-color: #0056b3;
+  }
+  
+  .github-icon {
+    margin-right: 5px;
+  }
