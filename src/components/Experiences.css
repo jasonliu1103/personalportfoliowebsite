@@ -65,6 +65,10 @@
   margin-bottom: 20px;
 }
 
+.experience-item::before {
+  content: none;
+}
+
 .dark {
   color: white;
 }
