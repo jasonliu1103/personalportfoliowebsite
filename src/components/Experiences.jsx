@@ -14,7 +14,7 @@ const experiencesData = [
     tools: "Tools: Jira, PostgreSQL",
     p1: "",
     image: alertdriving_logo,
-    link: "https://www.alertdriving.com/",
+    link: "https://www.alertdriving.info/",
   },
   {
     id: 2,
