@@ -22,16 +22,18 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2>Contact</h2>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" required />
-        <label>Email</label>
-        <input type="email" name="user_email" required />
-        <label>Message</label>
-        <textarea name="message" required />
-        <input type="submit" value="Send" />
-      </form>
+      <h1 className="contact-title">Contact</h1>
+      <div className="contact-container">
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <label>Name</label>
+          <input type="text" name="user_name" required />
+          <label>Email</label>
+          <input type="email" name="user_email" required />
+          <label>Message</label>
+          <textarea name="message" className="contact-textarea" required />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
     </section>
   );
 };

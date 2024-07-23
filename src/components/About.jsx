@@ -34,7 +34,7 @@ const About = () => {
         <p className="smaller-heading3">
           If I am not studying or coding, I typically enjoy listening to music,
           playing basketball, going to the gym, playing video games(find me on
-          Fortnite!) or driving around.
+          Fortnite or Valorant!) or driving around.
         </p>
         <p className="smaller-heading4">
           I believe that I have the skills, passion, and work ethic to bring
