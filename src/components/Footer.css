@@ -3,12 +3,15 @@ a.github-btn-F,
 a.ig-btn-F,
 a.email-btn-F {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px;
   margin-right: 10px;
   background-color: #007bff;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50%; 
   text-decoration: none;
+  font-size: 24px; 
+  line-height: 1; 
+  vertical-align: middle;
 }
 
 a.linkedin-btn-F:hover,
@@ -32,22 +35,24 @@ a.email-btn-F:hover {
   background-color: #123d6b;
 }
 
-.dark {
-    color: white;
-  }
-  
-.light {
-    color: black;
-}
-  
 .footer-line {
   border: none;
   height: 2px;
-  width: 90%; 
+  width: 80%; 
   background-color: #000000; 
   margin: 20px auto; 
 }
 
 .dark .footer-line {
   background-color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.footer-container {
+  text-align: center; 
+  padding: 20px; 
 }

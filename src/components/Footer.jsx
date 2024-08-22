@@ -9,6 +9,10 @@ const Footer = () => {
   return (
     <section id="footer">
     <hr className="footer-line" />
+    <p className="footer-text">
+     © Built and designed by Jason Liu.
+    </p>
+    <div class="footer-container">
     <a
     href="https://www.linkedin.com/in/jason-liu-422791237/"
     className="linkedin-btn-F"
@@ -41,6 +45,7 @@ const Footer = () => {
   >
     <MdEmail />
   </a> 
+  </div>
    </section>
   )
 }
