@@ -1,0 +1,53 @@
+a.linkedin-btn-F,
+a.github-btn-F, 
+a.ig-btn-F,
+a.email-btn-F {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.linkedin-btn-F:hover,
+a.github-btn-F:hover, 
+a.ig-btn-F:hover,
+a.email-btn-F:hover {
+  background-color: #0056b3;
+}
+
+.dark a.linkedin-btn-F,
+.dark a.github-btn-F, 
+.dark a.ig-btn-F,
+.dark a.email-btn-F {
+  background-color: #0e253d;
+}
+
+.dark a.linkedin-btn-F:hover,
+.dark a.github-btn-F:hover, 
+.dark a.ig-btn-F:hover,
+.dark a.email-btn-F:hover {
+  background-color: #123d6b;
+}
+
+.dark {
+    color: white;
+  }
+  
+.light {
+    color: black;
+}
+  
+.footer-line {
+  border: none;
+  height: 2px;
+  width: 90%; 
+  background-color: #000000; 
+  margin: 20px auto; 
+}
+
+.dark .footer-line {
+  background-color: #fff;
+}

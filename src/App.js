@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Experiences from "./components/Experiences.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const current_theme = localStorage.getItem("current_state");
@@ -22,6 +23,7 @@ function App() {
       <Experiences theme={theme} setTheme={setTheme} />
       <Projects theme={theme} setTheme={setTheme} />
       <Contact theme={theme} setTheme={setTheme} />
+      <Footer theme={theme} setTheme={setTheme} />
     </div>
   );
 }
