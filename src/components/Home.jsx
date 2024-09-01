@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import resume from "../assets/2Bresume.pdf";
+import resume from "../assets/2BresumeNEW.pdf";
 import { TypeAnimation } from "react-type-animation";
 import "./Home.css";
 
