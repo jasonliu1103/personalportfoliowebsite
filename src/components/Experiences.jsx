@@ -10,7 +10,7 @@ const experiencesData = [
     id: 1,
     title: "Software Quality Assurance Engineering Intern",
     company: "AlertDriving",
-    duration: "May 2024 - Present",
+    duration: "May 2024 - Aug 2024",
     tools: "Tools: Jira, PostgreSQL, DBeaver, Apache JMeter",
     p1: "• Utilized <strong>Jira</strong> to report, track and monitor application progress ensuring streamlined communication and productivity between QA, development, and BA teams to timely resolve application bugs.",
     p2: "• Identified, documented, and <strong>reported 150+ critical bugs</strong> during manual and regression testing, providing detailed descriptions, reproducible steps, and screenshots to expedite development.",
