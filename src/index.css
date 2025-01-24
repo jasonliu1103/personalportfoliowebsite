@@ -5,8 +5,13 @@
   font-family: sans-serif;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .container {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: #c6d5e7;
   transition: 0.3s;
