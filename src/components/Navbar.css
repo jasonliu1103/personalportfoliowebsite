@@ -89,3 +89,55 @@ ul li:hover {
   color: #fff;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuBtn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menuItems {
+  display: flex;
+  list-style: none;
+}
+
+.menuItems li {
+  margin: 0 10px;
+}
+
+.themeToggle {
+  cursor: pointer;
+  height: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hide the menu by default */
+  }
+
+  .menuItems li {
+    margin: 10px 0;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .menuOpen {
+    display: flex; /* Show the menu when active */
+  }
+}
+
