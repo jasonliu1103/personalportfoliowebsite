@@ -1,13 +1,27 @@
 import React from "react";
 import "./Experiences.css";
-import resume from "../assets/2BresumeNEW.pdf";
+import resume from "../assets/3Bresume.pdf";
 import alertdriving_logo from "../assets/alertdriving_logo.jpeg";
 import ontario_logo from "../assets/ontario.png";
 import chat_logo from "../assets/chat.png";
+import ford_logo from "../assets/ford.png";
 
 const experiencesData = [
   {
     id: 1,
+    title: "Software Engineering Intern",
+    company: "Ford Pro",
+    duration: "Jan 2025 - Apr 2025",
+    tools: "Tools: React.js, Playwright, Java, Terraform, Hoppscotch, GCP",
+    p1: "• Automated a GitHub Dependabot-Jira workflow that created tickets for <strong>10+ repositories</strong>, reducing manual tracking effort by <strong>80%</strong> and ensuring timely dependency updates across the team.",
+    p2: "• Developed front-end features using <strong>React.js</strong>, adding <strong>4 new dynamic fields</strong> to the schema editor and improving internal workflow efficiency for <strong>10+ developers</strong>.",
+    p3: "• Built and executed <strong>10+ functional test scripts</strong> in <strong>Hoppscotch</strong> to validate email service API endpoints, helping reduce email delivery bugs by <strong>30%</strong> during regression cycles.",
+    p4: "• Updated and optimized <strong>3 OpenTelemetry Terraform modules</strong>, contributing to a <strong>25%</strong> improvement in observability setup time across staging and production environments.",
+    image: ford_logo,
+    link: "https://www.fordpro.com/en-us/",
+  },
+  {
+    id: 2,
     title: "Software Quality Assurance Engineering Intern",
     company: "AlertDriving",
     duration: "May 2024 - Aug 2024",
@@ -20,7 +34,7 @@ const experiencesData = [
     link: "https://www.alertdriving.info/",
   },
   {
-    id: 2,
+    id: 3,
     title: "IT QA Assistant",
     company: "Ontario Ministry of Education",
     duration: "Sept 2023 - Dec 2023",
@@ -33,7 +47,7 @@ const experiencesData = [
     link: "https://efis.fma.csc.gov.on.ca/faab/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Data Processor",
     company: "CHAT Insurance",
     duration: "Jan 2023 - Apr 2023",
