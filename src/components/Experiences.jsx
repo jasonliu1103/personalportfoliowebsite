@@ -4,13 +4,13 @@ import resume from "../assets/3BresumeNEW.pdf";
 import alertdriving_logo from "../assets/alertdriving_logo.jpeg";
 import ontario_logo from "../assets/ontario.png";
 import chat_logo from "../assets/chat.png";
-import ford_logo from "../assets/ford.png";
+import ford_logo from "../assets/ford_logo.png";
 
 const experiencesData = [
   {
     id: 1,
     title: "Software Engineering Intern",
-    company: "Ford Pro",
+    company: "Ford Motor Company",
     duration: "Jan 2025 - Apr 2025",
     tools: "Tools: React.js, Playwright, Java, Terraform, Hoppscotch, GCP",
     p1: "• Automated a GitHub Dependabot-Jira workflow that created tickets for <strong>10+ repositories</strong>, reducing manual tracking effort by <strong>80%</strong> and ensuring timely dependency updates across the team.",
