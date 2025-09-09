@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experiences.css";
-import resume from "../assets/3Bresume.pdf";
+import resume from "../assets/3BresumeNEW.pdf";
 import alertdriving_logo from "../assets/alertdriving_logo.jpeg";
 import ontario_logo from "../assets/ontario.png";
 import chat_logo from "../assets/chat.png";
